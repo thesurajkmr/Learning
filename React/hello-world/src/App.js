@@ -8,23 +8,23 @@ import Message from "./components/Message";
 import Counter from "./components/Counter";
 import FunctionClick from "./components/FunctionClick";
 import ClassClick from "./components/ClassClick";
+import EventBind from "./components/EventBind";
 function App() {
   return (
     <div className="App">
-
-    <ClassClick></ClassClick>
-    <FunctionClick></FunctionClick>
-    {/* <Counter></Counter> */}
-
+      <EventBind></EventBind>
+      {/* <ClassClick></ClassClick> */}
+      {/* <FunctionClick></FunctionClick> */}
+      {/* <Counter></Counter> */}
 
       {/* <Message></Message> */}
-       {/* <Greet></Greet> */}
+      {/* <Greet></Greet> */}
       {/* <Welcome></Welcome>  */}
       {/* <Hello></Hello> */}
 
-       {/* <Greet name="Bruce" heroName="Batman"></Greet>
+      {/* <Greet name="Bruce" heroName="Batman"></Greet>
         <Welcome name="Bruce" heroName="Batman"></Welcome> */}
-        {/* <p>This is a children props</p> */}
+      {/* <p>This is a children props</p> */}
       {/* </Greet> */}
       {/* <Greet name="Clark" heroName="Superman">
         <button type="submit">Action</button>
