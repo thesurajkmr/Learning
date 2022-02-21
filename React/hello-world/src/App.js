@@ -10,23 +10,23 @@ function App() {
   return (
     <div className="App">
 
-    <Counter></Counter>
+    {/* <Counter></Counter> */}
 
 
       {/* <Message></Message> */}
-      {/* <Greet></Greet>
-      <Welcome></Welcome> */}
+       {/* <Greet></Greet> */}
+      {/* <Welcome></Welcome>  */}
       {/* <Hello></Hello> */}
 
-      {/* <Greet name="Bruce" heroName="Batman">
-        <p>This is a children props</p>
-      </Greet>
-      <Greet name="Clark" heroName="Superman">
+       <Greet name="Bruce" heroName="Batman"></Greet>
+        <Welcome name="Bruce" heroName="Batman"></Welcome>
+        {/* <p>This is a children props</p> */}
+      {/* </Greet> */}
+      {/* <Greet name="Clark" heroName="Superman">
         <button type="submit">Action</button>
       </Greet>
       <Greet name="Diana" heroName="WonderWoman"></Greet>
 
-      <Welcome name="Bruce" heroName="Batman">
         <p>This is a children props</p>
       </Welcome>
       <Welcome name="Clark" heroName="Superman">

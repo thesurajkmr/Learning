@@ -5,10 +5,12 @@ class Welcome extends Component{
         // console.log("Hello");
         // console.log(this);
         // this.props.name="kumar";
+        const {name,heroName}=this.props
+        // const {state1, state2}=this.state
         return (
             <div>
                 <h1>
-                    Welcome {this.props.name} a.k.a. {this.props.heroName}
+                    Welcome {name} a.k.a. {heroName}
                 </h1>
                 {this.props.children}
             </div>
