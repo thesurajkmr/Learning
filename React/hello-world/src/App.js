@@ -16,10 +16,11 @@ import StyleSheet from "./components/StyleSheet";
 import Inline from "./components/Inline";
 import './appStyles.css'
 import styles from './appStyles.module.css'
+import Forms from "./components/Forms";
 function App() {
   return (
     <div className="App">
-      
+      <Forms/>
       {/* <h1 className="error">error</h1>
       <h1 className={styles.success}>Success</h1>
       <Inline/> */}
