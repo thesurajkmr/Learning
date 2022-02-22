@@ -18,11 +18,13 @@ import './appStyles.css'
 import styles from './appStyles.module.css'
 import Forms from "./components/Forms";
 import LifeCycleA from "./components/LifeCycleA";
+import FragmentDemo from "./components/FragmentDemo";
 function App() {
   return (
     <div className="App">
+      <FragmentDemo/>
       {/* <Forms/> */}
-      <LifeCycleA/>
+      {/* <LifeCycleA/> */}
       {/* <h1 className="error">error</h1>
       <h1 className={styles.success}>Success</h1>
       <Inline/> */}
