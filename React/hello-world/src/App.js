@@ -1,4 +1,4 @@
-import React from "react";
+import React, { PureComponent } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Greet from "./components/Greet";
@@ -19,12 +19,22 @@ import styles from './appStyles.module.css'
 import Forms from "./components/Forms";
 import LifeCycleA from "./components/LifeCycleA";
 import FragmentDemo from "./components/FragmentDemo";
+import PureComp from "./components/PureComp";
+import ParentComponent2 from "./components/ParentComponent2";
 import RefDemo from "./components/RefDemo";
 function App() {
   return (
     <div className="App">
       <RefDemo/>
-      {/* <FragmentDemo/> */}
+    </div>
+  );
+}
+
+export default App;
+
+
+
+{/* <FragmentDemo/> */}
       {/* <Forms/> */}
       {/* <LifeCycleA/> */}
       {/* <h1 className="error">error</h1>
@@ -59,8 +69,3 @@ function App() {
         <button type="submit">Action</button>
       </Welcome>
       <Welcome name="Diana" heroName="WonderWoman"></Welcome> */}
-    </div>
-  );
-}
-
-export default App;
