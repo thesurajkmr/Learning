@@ -19,10 +19,12 @@ import styles from './appStyles.module.css'
 import Forms from "./components/Forms";
 import LifeCycleA from "./components/LifeCycleA";
 import FragmentDemo from "./components/FragmentDemo";
+import RefDemo from "./components/RefDemo";
 function App() {
   return (
     <div className="App">
-      <FragmentDemo/>
+      <RefDemo/>
+      {/* <FragmentDemo/> */}
       {/* <Forms/> */}
       {/* <LifeCycleA/> */}
       {/* <h1 className="error">error</h1>
