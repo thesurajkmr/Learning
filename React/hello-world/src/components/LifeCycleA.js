@@ -42,6 +42,9 @@ class LifeCycleA extends Component {
       console.log("LifeCycleA render method")
     return (
         <div>
+            {/* to trigger an update life cycle, we either 
+            have to change a prop or a state */}
+            <h1>{this.state.name}</h1>
             <button onClick={this.changeState}>Click</button>
             <LifeCycleB/>
         </div>
