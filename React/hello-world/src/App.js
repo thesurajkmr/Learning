@@ -19,13 +19,15 @@ import styles from './appStyles.module.css'
 import Forms from "./components/Forms";
 import LifeCycleA from "./components/LifeCycleA";
 import FragmentDemo from "./components/FragmentDemo";
-import PureComp from "./components/PureComp";
-import ParentComponent2 from "./components/ParentComponent2";
+// import PureComp from "./components/PureComp";
+// import ParentComponent2 from "./components/ParentComponent2";
 import RefDemo from "./components/RefDemo";
+import FocusInput from "./components/FocusInput";
 function App() {
   return (
     <div className="App">
-      <RefDemo/>
+        <FocusInput/>
+      {/* <RefDemo/> */}
     </div>
   );
 }
