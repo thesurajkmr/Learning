@@ -24,10 +24,12 @@ import FragmentDemo from "./components/FragmentDemo";
 import RefDemo from "./components/RefDemo";
 import FocusInput from "./components/FocusInput";
 import FRParentInput from "./components/FRParentInput";
+import PortalDemo from "./components/PortalDemo";
 function App() {
   return (
     <div className="App">
-      <FRParentInput/>
+      <PortalDemo/>
+      {/* <FRParentInput/> */}
         {/* <FocusInput/> */}
       {/* <RefDemo/> */}
     </div>
