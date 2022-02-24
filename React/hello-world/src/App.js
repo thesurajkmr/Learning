@@ -14,8 +14,8 @@ import UserGreeting from "./components/UserGreeting";
 import Namelist from "./components/Namelist";
 import StyleSheet from "./components/StyleSheet";
 import Inline from "./components/Inline";
-import './appStyles.css'
-import styles from './appStyles.module.css'
+import "./appStyles.css";
+import styles from "./appStyles.module.css";
 import Forms from "./components/Forms";
 import LifeCycleA from "./components/LifeCycleA";
 import FragmentDemo from "./components/FragmentDemo";
@@ -31,12 +31,17 @@ import ClickCounter from "./components/ClickCounter";
 import HoverCounter from "./components/HoverCounter";
 import ClickCounterTwo from "./components/ClickCounterTwo";
 import HoverCounterTwo from "./components/HoverCounterTwo";
+import ComponentC from "./components/ComponentC";
+import { UserProvider } from "./components/UserContext";
 function App() {
   return (
     <div className="App">
-      <ClickCounterTwo/>
-      <HoverCounterTwo/>
-      
+      <UserProvider value="Suraj">
+        <ComponentC />
+      </UserProvider>
+      {/* <ClickCounterTwo/>
+      <HoverCounterTwo/> */}
+
       {/* <ClickCounter name="Suraj" />
       <HoverCounter/> */}
 
@@ -51,7 +56,7 @@ function App() {
       </ErrorBoundary> */}
       {/* <PortalDemo/> */}
       {/* <FRParentInput/> */}
-        {/* <FocusInput/> */}
+      {/* <FocusInput/> */}
       {/* <RefDemo/> */}
     </div>
   );
@@ -59,33 +64,70 @@ function App() {
 
 export default App;
 
-
-
-{/* <FragmentDemo/> */}
-      {/* <Forms/> */}
-      {/* <LifeCycleA/> */}
-      {/* <h1 className="error">error</h1>
+{
+  /* <FragmentDemo/> */
+}
+{
+  /* <Forms/> */
+}
+{
+  /* <LifeCycleA/> */
+}
+{
+  /* <h1 className="error">error</h1>
       <h1 className={styles.success}>Success</h1>
-      <Inline/> */}
-      {/* <StyleSheet primary={true}></StyleSheet> */}
-      {/* <Namelist/> */}
-      {/* <UserGreeting/> */}
-      {/* <ParentComponent/> */}
-      {/* <EventBind></EventBind> */}
-      {/* <ClassClick></ClassClick> */}
-      {/* <FunctionClick></FunctionClick> */}
-      {/* <Counter></Counter> */}
+      <Inline/> */
+}
+{
+  /* <StyleSheet primary={true}></StyleSheet> */
+}
+{
+  /* <Namelist/> */
+}
+{
+  /* <UserGreeting/> */
+}
+{
+  /* <ParentComponent/> */
+}
+{
+  /* <EventBind></EventBind> */
+}
+{
+  /* <ClassClick></ClassClick> */
+}
+{
+  /* <FunctionClick></FunctionClick> */
+}
+{
+  /* <Counter></Counter> */
+}
 
-      {/* <Message></Message> */}
-      {/* <Greet></Greet> */}
-      {/* <Welcome></Welcome>  */}
-      {/* <Hello></Hello> */}
+{
+  /* <Message></Message> */
+}
+{
+  /* <Greet></Greet> */
+}
+{
+  /* <Welcome></Welcome>  */
+}
+{
+  /* <Hello></Hello> */
+}
 
-      {/* <Greet name="Bruce" heroName="Batman"></Greet>
-        <Welcome name="Bruce" heroName="Batman"></Welcome> */}
-      {/* <p>This is a children props</p> */}
-      {/* </Greet> */}
-      {/* <Greet name="Clark" heroName="Superman">
+{
+  /* <Greet name="Bruce" heroName="Batman"></Greet>
+        <Welcome name="Bruce" heroName="Batman"></Welcome> */
+}
+{
+  /* <p>This is a children props</p> */
+}
+{
+  /* </Greet> */
+}
+{
+  /* <Greet name="Clark" heroName="Superman">
         <button type="submit">Action</button>
       </Greet>
       <Greet name="Diana" heroName="WonderWoman"></Greet>
@@ -95,4 +137,5 @@ export default App;
       <Welcome name="Clark" heroName="Superman">
         <button type="submit">Action</button>
       </Welcome>
-      <Welcome name="Diana" heroName="WonderWoman"></Welcome> */}
+      <Welcome name="Diana" heroName="WonderWoman"></Welcome> */
+}
