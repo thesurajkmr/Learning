@@ -36,9 +36,9 @@ import { UserProvider } from "./components/UserContext";
 function App() {
   return (
     <div className="App">
-      <UserProvider value="Suraj">
+      {/* <UserProvider value="Suraj"> */}
         <ComponentC />
-      </UserProvider>
+      {/* </UserProvider> */}
       {/* <ClickCounterTwo/>
       <HoverCounterTwo/> */}
 
