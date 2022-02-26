@@ -19,7 +19,7 @@ class ClassCounterOne extends Component {
     return true;
   }
   componentDidUpdate(prevProps, prevState) {
-    if (prevState.count != this.state.count) {
+    if (prevState.count !== this.state.count) {
       console.log("Updated");
       document.title = `you have clicked ${this.state.count} times`;
     }
