@@ -16,7 +16,7 @@ function HookCounterFour() {
         <ul>
             {
                 items.map(item=>{
-                    <li key={item.id}>{item.value}</li>
+                    return (<li key={item.id}>{item.value}</li>)
                 })
             }
         </ul>
