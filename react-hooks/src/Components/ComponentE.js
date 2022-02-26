@@ -1,9 +1,13 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import ComponentF from './ComponentF'
+import { UserContext,ChannelContext } from '../App'
 
 function ComponentE() {
-  return (
+    const user=useContext(UserContext)
+    const title=useContext(ChannelContext)
+    return (
     <div>
+        {user}--{title}
         <ComponentF/>
     </div>
   )
