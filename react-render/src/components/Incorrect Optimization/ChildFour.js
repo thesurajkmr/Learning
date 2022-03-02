@@ -11,4 +11,9 @@ export const ChildFour = ({ name }) => {
   );
 };
 
-export const MemoizedChildFour=React.memo(ChildFour);
+export const MemoizedChildFour = React.memo(ChildFour);
+
+// in this case, on clicking the name button the time gets updated due
+// to props change, but the time do not get updated on clicking 
+// the count button. 
+// 
