@@ -1,6 +1,6 @@
 import React from "react";
 
-export const ChildFive = ({ name ,handler}) => {
+export const ChildFive = ({ name }) => {
   console.log("Child Five Render");
   return (
     <div>
