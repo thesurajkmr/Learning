@@ -11,6 +11,13 @@ export const ChildA = () => {
   );
 };
 
+export const MemoizedChildA=React.memo(ChildA)
+
+// we can get the behavior we wanted, if we use memo here
+// one thing to note that if the child c has more childs, 
+// those childs will get re rendered due to default
+// parent child relationship
+
 export const ChildB = () => {
   console.log("Child B render");
   return (
