@@ -7,7 +7,7 @@ type AuthUser={
 }
 export const User = () => {
 
-    const [user, setuser] = useState<null | AuthUser>(null)
+    const [user, setuser] = useState<AuthUser>({} as AuthUser)
     // these two are the possible types an user can have
     // either null or AuthUser
     const handleLogin=()=>{
@@ -18,20 +18,22 @@ export const User = () => {
             email:'example@mail.com'
         })
     }
-    const handleLogout=()=>{
-        console.log("Logged Out");
-        setuser(null)
+    // const handleLogout=()=>{
+    //     console.log("Logged Out");
+    //     setuser(null)
         
-    }
+    // }
   return (
     <>
       <div>
         <button onClick={handleLogin}>Log In</button>
-        <button onClick={handleLogout}>Log Out</button>
-        <div>User name is {user?.name}</div>
+        {/* <button onClick={handleLogout}>Log Out</button> */}
+        <div>User name is {user.name}</div>
         {/* this optional chaining because user can be null. Typescript magic */}
-        <div>User name is {user?.email}</div>
+        <div>User name is {user.email}</div>
       </div>
     </>
   );
 };
+// type assertion only if you are sure that the object will be set to
+// credentials instantly
