@@ -1,9 +1,7 @@
 import React from "react";
+import { Name } from "./Person.types";
 type nameListProps = {
-  nameList: {
-    first: String;
-    last: String;
-  }[];
+  nameList: Name[];
 };
 export const PersonList = (props: nameListProps) => {
   return (
